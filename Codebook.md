@@ -19,6 +19,7 @@ The UCI HAR data set, upon which our study is based, contains the following desc
   
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
  I removed all columns where the original name did not contain -std or -mean. 
+
 3.Uses descriptive activity names to name the activities in the data set.
  I have renamed the metrics column names to make them more descriptive and human readable.
  

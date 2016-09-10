@@ -23,48 +23,56 @@ The UCI HAR data set, upon which our study is based, contains the following desc
  
 Appropriately labels the data set with descriptive variable names.
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-2.**acivity** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-3.**meanmeanBodyAccX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-4.**meanmeanBodyAccZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-5.**stdBodyAccX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-6.**stdBodyAccZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-7.**meanmeanGravityAccX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-8.**meanmeanGravityAccZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-9.**stdGravityAccX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-10.**stdGravityAccZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-11.**meanmeanBodyAccJerkX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-12.**meanmeanBodyAccJerkZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-13.**stdBodyAccJerkX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-14.**stdBodyAccJerkZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-15.**meanmeanBodyGyroX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-16.**meanmeanBodyGyroZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-17.**stdBodyGyroX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-18.**stdBodyGyroZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-19.**meanmeanBodyGyroJerkX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-20.**meanmeanBodyGyroJerkZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-21.**stdBodyGyroJerkX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-22.**stdBodyGyroJerkZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-23.**meanmeanBodyAccMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-24.**stdBodyAccMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-25.**meanmeanBodyAccJerkMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-26.**stdBodyAccJerkMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-27.**meanmeanBodyGyroJerkMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-28.**stdBodyGyroJerkMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-29.**meanmeanBodyAccY** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-30.**stdBodyAccY** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-31.**meanFreqBodyAccY** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-32.**meanmeanBodyAccJerkX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-33.**meanmeanBodyAccJerkZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-34.**stdBodyAccJerkX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-35.**stdBodyAccJerkZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-36.**meanFreqBodyAccJerkX** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-37.**meanFreqBodyAccJerkZ** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-38.**meanmeanBodyGyroY** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-39.**stdBodyGyroY** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-40.**meanFreqBodyGyroY** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-41.**meanmeanBodyAccMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-42.**stdBodyAccMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-43.**meanFreqBodyAccMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-44.**meanmeanBodyBodyGyroMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-45.**stdBodyBodyGyroMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
-46.**meanFreqBodyBodyGyroMag** (number) - The mean of the tBodyAcc-mean()-X variable from the UCI HAL data set
+##Cleaned data set variables
+
+Column names
+
+List of identifiers subjectID: id of the tester activity: the type of activity the tester made, as indicated by the activity label data set
+
+List of cleaned column name variables, whose means were calculated in the tidy data set. The names were cleaned from their original raw names by removing symbols and capitalizing the first letter of either "Std" or "Mean" to make the variables more human readable
+1. tBodyAccMeanX
+2. tBodyAccMeanY
+3. tBodyAccMeanZ
+4. tBodyAccStdX 
+5. tBodyAccStdY
+6. tBodyAccStdZ
+7. tGravityAccMeanX
+8. tGravityAccMeanY
+9. tGravityAccMeanZ
+10. tGravityAccStdX
+11. tGravityAccStdY
+12. tGravityAccStdZ
+13. tBodyAccJerkMeanX
+14. tBodyAccJerkMeanY
+15. tBodyAccJerkMeanZ
+16. tBodyAccJerkStdX
+17. tBodyAccJerkStdY
+18. tBodyAccJerkStdZ
+19. tBodyGyroMeanX
+20. tBodyGyroMeanY
+21. tBodyGyroMeanZ
+22. tBodyGyroStdX
+23. tBodyGyroStdY
+24. tBodyGyroStdZ
+25. tBodyGyroJerkMeanX
+26. tBodyGyroJerkMeanY
+27. tBodyGyroJerkMeanZ
+28. tBodyGyroJerkStdX
+29. tBodyGyroJerkStdY
+30. tBodyGyroJerkStdZ
+31. tBodyAccMagMean
+32. tBodyAccMagStd
+33. tGravityAccMagMean
+34. tGravityAccMagStd
+35. tBodyAccJerkMagMean
+36. tBodyAccJerkMagStd
+37. tBodyGyroMagMean
+38. tBodyGyroMagStd
+39. tBodyGyroJerkMagMean
+40. tBodyGyroJerkMagStd
+41. fBodyAccMeanX
+42. fBodyAccMeanY
+43. fBodyAccMeanZ
+44. fBodyAccStdX
+45. fBodyAccStdY
+46. fBodyAccStdZ fBodyAccMeanFreqX fBodyAccMeanFreqY fBodyAccMeanFreqZ fBodyAccJerkMeanX fBodyAccJerkMeanY fBodyAccJerkMeanZ fBodyAccJerkStdX fBodyAccJerkStdY fBodyAccJerkStdZ fBodyAccJerkMeanFreqX fBodyAccJerkMeanFreqY fBodyAccJerkMeanFreqZ fBodyGyroMeanX fBodyGyroMeanY fBodyGyroMeanZ fBodyGyroStdX fBodyGyroStdY fBodyGyroStdZ fBodyGyroMeanFreqX fBodyGyroMeanFreqY fBodyGyroMeanFreqZ fBodyAccMagMean fBodyAccMagStd fBodyAccMagMeanFreq fBodyBodyAccJerkMagMean fBodyBodyAccJerkMagStd fBodyBodyAccJerkMagMeanFreq fBodyBodyGyroMagMean fBodyBodyGyroMagStd fBodyBodyGyroMagMeanFreq fBodyBodyGyroJerkMagMean fBodyBodyGyroJerkMagStd fBodyBodyGyroJerkMagMeanFreq

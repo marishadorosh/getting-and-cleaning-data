@@ -18,61 +18,15 @@ The UCI HAR data set, upon which our study is based, contains the following desc
   I repeated this for both the train and test subsets and then combined the subsets into a final data.table.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
  I removed all columns where the original name did not contain -std or -mean. 
-3.Uses descriptive activity names to name the activities in the data set.
- I have renamed the metrics column names to make them more descriptive and human readable.
+3. Uses descriptive activity names to name the activities in the data set.
+ I have renamed the metrics column names to make them more descriptive and human readable. Appropriately labels the data set with descriptive variable names.
+4. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+## Cleaned data set variables
+
+Column names:
+
+ - List of identifiers subjectID: id of the tester activity: the type of activity the tester made, as indicated by the activity label data set
+
+ - List of cleaned column name variables, whose means were calculated in the tidy data set. The names were cleaned from their original raw names by removing symbols and capitalizing the first letter of either "Std" or "Mean" to make the variables more human readable:tBodyAccMeanX, tBodyAccMeanY, tBodyAccMeanZ, tBodyAccStdX, tBodyAccStdY, tBodyAccStdZ, tGravityAccMeanX, tGravityAccMeanY, tGravityAccMeanZ, tGravityAccStdX, tGravityAccStdY, tGravityAccStdZ, tBodyAccJerkMeanX, tBodyAccJerkMeanY, tBodyAccJerkMeanZ, tBodyAccJerkStdX, tBodyAccJerkStdY, tBodyAccJerkStdZ, tBodyGyroMeanX, tBodyGyroMeanY, tBodyGyroMeanZ, tBodyGyroStdX, tBodyGyroStdY, tBodyGyroStdZ, tBodyGyroJerkMeanX, tBodyGyroJerkMeanY, tBodyGyroJerkMeanZ, tBodyGyroJerkStdX, tBodyGyroJerkStdY, tBodyGyroJerkStdZ, tBodyAccMagMean, tBodyAccMagStd, tGravityAccMagMean, tGravityAccMagStd, tBodyAccJerkMagMean, tBodyAccJerkMagStd, tBodyGyroMagMean, tBodyGyroMagStd, tBodyGyroJerkMagMean, tBodyGyroJerkMagStd, fBodyAccMeanX, fBodyAccMeanY, fBodyAccMeanZ, fBodyAccStdX, fBodyAccStdY, fBodyAccStdZ, fBodyAccMeanFreqX, fBodyAccMeanFreqY, fBodyAccMeanFreqZ, fBodyAccJerkMeanX, fBodyAccJerkMeanY, fBodyAccJerkMeanZ, fBodyAccJerkStdX, fBodyAccJerkStdY, fBodyAccJerkStdZ, fBodyAccJerkMeanFreqX, fBodyAccJerkMeanFreqY, fBodyAccJerkMeanFreqZ, fBodyGyroMeanX, fBodyGyroMeanY, fBodyGyroMeanZ, fBodyGyroStdX, fBodyGyroStdY, fBodyGyroStdZ, fBodyGyroMeanFreqX, fBodyGyroMeanFreqY, fBodyGyroMeanFreqZ, fBodyAccMagMean, fBodyAccMagStd, fBodyAccMagMeanFreq, fBodyBodyAccJerkMagMean, fBodyBodyAccJerkMagStd, fBodyBodyAccJerkMagMeanFreq, fBodyBodyGyroMagMean, fBodyBodyGyroMagStd, fBodyBodyGyroMagMeanFreq, fBodyBodyGyroJerkMagMean, fBodyBodyGyroJerkMagStd, fBodyBodyGyroJerkMagMeanFreq.
  
-Appropriately labels the data set with descriptive variable names.
-From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-##Cleaned data set variables
-
-Column names
-
-List of identifiers subjectID: id of the tester activity: the type of activity the tester made, as indicated by the activity label data set
-
-List of cleaned column name variables, whose means were calculated in the tidy data set. The names were cleaned from their original raw names by removing symbols and capitalizing the first letter of either "Std" or "Mean" to make the variables more human readable
-1. tBodyAccMeanX
-2. tBodyAccMeanY
-3. tBodyAccMeanZ
-4. tBodyAccStdX 
-5. tBodyAccStdY
-6. tBodyAccStdZ
-7. tGravityAccMeanX
-8. tGravityAccMeanY
-9. tGravityAccMeanZ
-10. tGravityAccStdX
-11. tGravityAccStdY
-12. tGravityAccStdZ
-13. tBodyAccJerkMeanX
-14. tBodyAccJerkMeanY
-15. tBodyAccJerkMeanZ
-16. tBodyAccJerkStdX
-17. tBodyAccJerkStdY
-18. tBodyAccJerkStdZ
-19. tBodyGyroMeanX
-20. tBodyGyroMeanY
-21. tBodyGyroMeanZ
-22. tBodyGyroStdX
-23. tBodyGyroStdY
-24. tBodyGyroStdZ
-25. tBodyGyroJerkMeanX
-26. tBodyGyroJerkMeanY
-27. tBodyGyroJerkMeanZ
-28. tBodyGyroJerkStdX
-29. tBodyGyroJerkStdY
-30. tBodyGyroJerkStdZ
-31. tBodyAccMagMean
-32. tBodyAccMagStd
-33. tGravityAccMagMean
-34. tGravityAccMagStd
-35. tBodyAccJerkMagMean
-36. tBodyAccJerkMagStd
-37. tBodyGyroMagMean
-38. tBodyGyroMagStd
-39. tBodyGyroJerkMagMean
-40. tBodyGyroJerkMagStd
-41. fBodyAccMeanX
-42. fBodyAccMeanY
-43. fBodyAccMeanZ
-44. fBodyAccStdX
-45. fBodyAccStdY
-46. fBodyAccStdZ fBodyAccMeanFreqX fBodyAccMeanFreqY fBodyAccMeanFreqZ fBodyAccJerkMeanX fBodyAccJerkMeanY fBodyAccJerkMeanZ fBodyAccJerkStdX fBodyAccJerkStdY fBodyAccJerkStdZ fBodyAccJerkMeanFreqX fBodyAccJerkMeanFreqY fBodyAccJerkMeanFreqZ fBodyGyroMeanX fBodyGyroMeanY fBodyGyroMeanZ fBodyGyroStdX fBodyGyroStdY fBodyGyroStdZ fBodyGyroMeanFreqX fBodyGyroMeanFreqY fBodyGyroMeanFreqZ fBodyAccMagMean fBodyAccMagStd fBodyAccMagMeanFreq fBodyBodyAccJerkMagMean fBodyBodyAccJerkMagStd fBodyBodyAccJerkMagMeanFreq fBodyBodyGyroMagMean fBodyBodyGyroMagStd fBodyBodyGyroMagMeanFreq fBodyBodyGyroJerkMagMean fBodyBodyGyroJerkMagStd fBodyBodyGyroJerkMagMeanFreq
